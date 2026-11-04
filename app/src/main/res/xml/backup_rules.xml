@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+   Reglas de respaldo para Android 11 o inferior (API <= 30).
+   Las fotos privadas de la app (files/fotos/) NO se respaldan.
+   https://developer.android.com/guide/topics/data/autobackup
+-->
+<full-backup-content>
+    <exclude domain="file" path="fotos/" />
+</full-backup-content>
